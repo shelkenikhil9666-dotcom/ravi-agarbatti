@@ -59,6 +59,96 @@ const products = [
             { label: '500g', price: 420, originalPrice: 500 },
             { label: '1kg', price: 799, originalPrice: 950 }
         ]
+    },
+    {
+        id: 'rose',
+        name: 'फ्रेश गुलाब अगरबत्ती',
+        enName: 'Fresh Rose Agarbatti',
+        subtitle: 'गुलाबाच्या फुलांचा मोहक आणि रोमँटिक सुगंध',
+        desc: 'ताज्या गुलाबाच्या फुलांपासून बनवलेली अगरबत्ती. मन प्रसन्न करण्यासाठी आणि घरातील दुर्गंधी दूर करून ताजेपणा आणण्यासाठी सर्वोत्तम.',
+        image: 'assets/rose.png',
+        rating: 4.8,
+        sizes: [
+            { label: '100g', price: 118, originalPrice: 140 },
+            { label: '250g', price: 260, originalPrice: 310 },
+            { label: '500g', price: 480, originalPrice: 560 },
+            { label: '1kg', price: 899, originalPrice: 1050 }
+        ]
+    },
+    {
+        id: 'kevda',
+        name: 'लक्झरी केवडा अगरबत्ती',
+        enName: 'Luxury Kevda Agarbatti',
+        subtitle: 'केवड्याचा समृद्ध आणि पारंपारिक सुगंध',
+        desc: 'केवड्याच्या पानांच्या अर्कापासून बनवलेली सुगंधी अगरबत्ती. घरातील वातावरणात धार्मिक आणि सकारात्मक ऊर्जा निर्माण करते.',
+        image: 'assets/kevda.png',
+        rating: 4.7,
+        sizes: [
+            { label: '100g', price: 118, originalPrice: 145 },
+            { label: '250g', price: 260, originalPrice: 320 },
+            { label: '500g', price: 480, originalPrice: 570 },
+            { label: '1kg', price: 899, originalPrice: 1099 }
+        ]
+    },
+    {
+        id: 'jasmine_gold',
+        name: 'जाई गोल्ड अगरबत्ती',
+        enName: 'Jasmine Gold Agarbatti',
+        subtitle: 'जाईच्या फुलांचा गोड आणि सुखद सुगंध',
+        desc: 'सुंदर जाईच्या फुलांचा हलका आणि मनमोहक सुगंध. शांत झोप येण्यासाठी आणि तणावमुक्त राहण्यासाठी अत्यंत फायदेशीर.',
+        image: 'assets/mogra.png',
+        rating: 4.6,
+        sizes: [
+            { label: '100g', price: 118, originalPrice: 140 },
+            { label: '250g', price: 250, originalPrice: 300 },
+            { label: '500g', price: 470, originalPrice: 550 },
+            { label: '1kg', price: 880, originalPrice: 999 }
+        ]
+    },
+    {
+        id: 'kasturi',
+        name: 'दैवी कस्तुरी अगरबत्ती',
+        enName: 'Divine Kasturi Agarbatti',
+        subtitle: 'कस्तुरीचा राजासारखा राजेशाही सुगंध',
+        desc: 'कस्तुरीच्या उग्र आणि मोहक सुगंधाने युक्त. ध्यानधारणा, योग आणि पूजेसाठी खास तयार केलेली प्रीमियम अगरबत्ती.',
+        image: 'assets/sandalwood.png',
+        rating: 4.9,
+        sizes: [
+            { label: '100g', price: 125, originalPrice: 150 },
+            { label: '250g', price: 280, originalPrice: 340 },
+            { label: '500g', price: 520, originalPrice: 620 },
+            { label: '1kg', price: 950, originalPrice: 1150 }
+        ]
+    },
+    {
+        id: 'guggal',
+        name: 'नॅचरल गुग्गुळ धूप अगरबत्ती',
+        enName: 'Natural Guggal Dhoop Agarbatti',
+        subtitle: 'शुद्ध गुग्गुळ धुपाचा पारंपारिक अनुभव',
+        desc: 'गुग्गुळ वनस्पतीपासून तयार केलेली. वातावरण शुद्ध करण्यासाठी आणि हवेतील जंतू नष्ट करण्यासाठी अत्यंत गुणकारी.',
+        image: 'assets/loban.png',
+        rating: 4.8,
+        sizes: [
+            { label: '100g', price: 99, originalPrice: 120 },
+            { label: '250g', price: 220, originalPrice: 270 },
+            { label: '500g', price: 420, originalPrice: 500 },
+            { label: '1kg', price: 799, originalPrice: 950 }
+        ]
+    },
+    {
+        id: 'sandal_gold',
+        name: 'चंदन गोल्ड प्रीमियम अगरबत्ती',
+        enName: 'Sandal Gold Premium Agarbatti',
+        subtitle: 'अधिक दाट आणि शुद्ध सोन्यासारखा चंदन सुगंध',
+        desc: 'रवी अगरबत्तीचे सर्वात उच्च दर्जाचे उत्पादन. विशेष चंदनाचा अर्क वापरून तयार केलेली राजेशाही सुगंधाची मेजवानी.',
+        image: 'assets/sandalwood.png',
+        rating: 5,
+        sizes: [
+            { label: '100g', price: 150, originalPrice: 180 },
+            { label: '250g', price: 320, originalPrice: 380 },
+            { label: '500g', price: 599, originalPrice: 700 },
+            { label: '1kg', price: 1100, originalPrice: 1300 }
+        ]
     }
 ];
 
@@ -203,12 +293,17 @@ function renderProducts() {
                         ${sizePillsHTML}
                     </div>
 
-                    <div class="product-footer">
-                        <div class="product-price">
-                            <h3>₹${sizeInfo.price} <span class="original-price">₹${sizeInfo.originalPrice}</span></h3>
-                        </div>
-                        <button class="btn-primary" onclick="addProductToCart('${p.id}')">
+                    <div class="product-price-section">
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">किंमत:</span>
+                        <h3>₹${sizeInfo.price} <span class="original-price">₹${sizeInfo.originalPrice}</span></h3>
+                    </div>
+
+                    <div class="product-card-actions">
+                        <button class="btn-cart-add" onclick="addProductToCart('${p.id}')">
                             <i class="fa-solid fa-cart-plus"></i> कार्टमध्ये टाका
+                        </button>
+                        <button class="btn-buy-now" onclick="buyNowProduct('${p.id}')">
+                            <i class="fa-solid fa-bolt"></i> थेट खरेदी करा
                         </button>
                     </div>
                 </div>
@@ -250,6 +345,35 @@ function addProductToCart(productId) {
     saveCartToSession();
     updateCartUI();
     showNotification(`${product.name} (${sizeLabel}) कार्टमध्ये जोडले गेले!`);
+}
+
+function buyNowProduct(productId) {
+    const product = products.find(p => p.id === productId);
+    const sizeLabel = selectedSizes[productId];
+    const sizeInfo = product.sizes.find(s => s.label === sizeLabel);
+
+    // Check if product with this size already in cart
+    const existingIndex = cart.findIndex(item => item.id === productId && item.size === sizeLabel);
+
+    if (existingIndex === -1) {
+        cart.push({
+            id: productId,
+            name: product.name,
+            enName: product.enName,
+            size: sizeLabel,
+            price: sizeInfo.price,
+            qty: 1,
+            img: product.image
+        });
+    } else {
+        cart[existingIndex].qty += 1;
+    }
+
+    saveCartToSession();
+    updateCartUI();
+    
+    // Redirect to checkout screen immediately
+    navigateTo('checkout');
 }
 
 function updateCartUI() {

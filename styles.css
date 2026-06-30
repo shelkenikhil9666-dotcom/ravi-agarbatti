@@ -552,14 +552,12 @@ body {
     border-color: var(--primary-color);
 }
 
-.product-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.product-price-section {
     margin-top: auto;
+    margin-bottom: 12px;
 }
 
-.product-price h3 {
+.product-price-section h3 {
     font-size: 1.4rem;
     color: var(--primary-color);
     font-weight: 800;
@@ -571,6 +569,53 @@ body {
     color: var(--text-muted);
     margin-left: 5px;
     font-weight: normal;
+}
+
+.product-card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.btn-cart-add {
+    background-color: #ff9f00; /* Flipkart Yellow */
+    color: #ffffff;
+    border: none;
+    padding: 10px 4px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.btn-cart-add:hover {
+    background-color: #e58f00;
+}
+
+.btn-buy-now {
+    background-color: #fb641b; /* Flipkart Orange */
+    color: #ffffff;
+    border: none;
+    padding: 10px 4px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.btn-buy-now:hover {
+    background-color: #e15615;
 }
 
 /* 2. CART SCREEN */
